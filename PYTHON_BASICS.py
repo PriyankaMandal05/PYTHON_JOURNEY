@@ -1,7 +1,7 @@
 """print("hey, world")
 print("hey, world")
 print("hey, world")"""
-# print("Priyanka here\nand this is my \"friend\".") #\" is an escape seq char.
+# print("Priyanka here\nand this is my \"friend\".") # (\") is an escape seq char.
 # print("priyanka",  "girl",  21, sep="$",end="*") #sep separates everything with the symbol in it($) & end just ends the line with the char
 
 # CALCULATOR***
@@ -226,8 +226,21 @@ print("hey, world")"""
 #     print("try next time " \
 #     "SHAAVA SHAAVA ")    
 
-import this
+# import this
 
+# FIBONACCI SERIES***
+# def fibonacci(n):
+#     if(n == 0 or n == 1):
+#         return n
+#     else:
+#        return fibonacci(n-1) + fibonacci(n-2)
+    
+# # print(fibonacci(3))
+# for i in range(5):
+#     print(fibonacci(i), end =" ")
+
+newset = set()
+print(type(newset))
 
 
 
