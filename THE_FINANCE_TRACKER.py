@@ -1,6 +1,6 @@
 # We are making a finance tracker app in which we can keep a track of our expenses.
 # making a list to keep our topics.
-print("WELCOME TO 'THE FINANCE TRACKER' !!! \n # Sahi jagah kharcho :)")
+print("WELCOME TO 'THE FINANCE TRACKER' !!! \n # Sahi jagah kharcho" +"\u2764\uFE0F")
 allExpenses = []
 
 while(True):
@@ -33,9 +33,8 @@ while(True):
             print("NO purchase.")
 
         else:
-
-           count = 1 #(ye count, loop ke bahar rakhne se iski value 1 only once use hogi* => baaki time after entering loop, count++ value will be used. NHI TOH ALWAYS EVEN AFTER ++, COUNT WILL BE STARTED AS 1, AS IT IS INSIDE FOR LOOP)
-           for i in allExpenses:
+         count = 1 #(ye count, loop ke bahar rakhne se iski value 1 only once use hogi* => baaki time after entering loop, count++ value will be used. NHI TOH ALWAYS EVEN AFTER ++, COUNT WILL BE STARTED AS 1, AS IT IS INSIDE FOR LOOP)
+        for i in allExpenses:
             print(f"your expense no.{count} is on {i["date"]} of {i["category"]}, in which u purchased {i["particular_detail"]} and its price was {i["amount"]}")    
             count = count + 1
 
@@ -50,7 +49,7 @@ while(True):
        print("THANK YOU FOR VISITING OUR APP " +"\U0001F64F")
        break
     else:
-       print("INVALID CHOICE . TRY AGAIN") 
+       print("INVALID CHOICE . TRY AGAIN !") 
     user_choice = input("Do you want to continue the services ? (yes/no)").strip().lower()         
     if(user_choice == "no"):
        print("THANK YOU FOR VISITING OUR APP " +"\U0001F64F")
