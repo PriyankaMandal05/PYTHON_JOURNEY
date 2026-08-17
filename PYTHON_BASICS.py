@@ -194,7 +194,9 @@ print("hey, world")"""
  # (OR) elif(hour >= 16 ):
  #     print("good evening!")
 # else:
-#     print("good evening!")        
+#     print("good evening!")     
+ 
+  
 
 # EXERCISE - 3***
 # print("NAMASKAR ! WELCOME TO KAUN BANEGA CROREPATI(KBC)")
@@ -209,7 +211,7 @@ print("hey, world")"""
 # choice = int(input("enter your choice : "))
 # match choice:
 #     case 1:
-#         print("2")
+#         print("2") 
 #     case 2:
 #         print("4") 
 #     case 3:
@@ -226,7 +228,12 @@ print("hey, world")"""
 #     print("try next time " \
 #     "SHAAVA SHAAVA ")    
 
-# import this
+
+
+# import this (THE ZEN OF PYTHON)
+
+
+# SETS IN PYTHON***
 
 # FIBONACCI SERIES***
 # def fibonacci(n):
@@ -239,8 +246,180 @@ print("hey, world")"""
 # for i in range(5):
 #     print(fibonacci(i), end =" ")
 
-newset = set()
-print(type(newset))
+
+# SET METHODS***
+# newset = set()
+# print(type(newset))
+
+# set1 = { 1,2,3}
+# set2 = {3,4,5}
+# newset = set1.union(set2)
+# print(newset)
+# set1.update(set2)
+# print(set1 , set2)
+
+# set1 = { 1,2,3}
+# set2 = {3,4,5}
+# newset = set1.intersection(set2)
+# print(newset)
+# set1.intersection_update(set2)
+# print(set1 , set2)
+
+# set1 = { 1,2,3}
+# set2 = {3,4,5}
+# newset = set1.symmetric_difference(set2)
+# print(newset)
+# set1.symmetric_difference_update(set2)
+# print(set1 , set2)
+
+# set1 = { 1,2,3}
+# set2 = {3,4,5}
+# newset = set1.difference(set2)
+# print(newset)
+# set1.difference_update(set2)
+# print(set1 , set2)
+
+
+# DICTIONARY IN PYTHON***
+
+# student = {
+#     "name" : "priyanka",
+#     "class": "I-123",
+#     "college": "MAIT",
+
+# }
+
+# for key in student.keys():
+#     print(key)
+
+# for key in student.keys():
+#     print(student[key])
+
+# print(student["name"])
+
+# print(student)
+# print(student.keys())
+# print(student.values())
+# print(student.items())
+
+
+
+# BY USING f-STRING***
+# for key,value in student.items():
+#     print(f"the value of {key} is {value}")
+# OR
+# for key in student.keys():
+#     print(f"the value of {key} is {student[key]}")
+
+# dict1 = {"num1":  1,
+#          "num2": 2,
+#          "num3": 3
+#          }
+# dict2 = {
+#     # "num4":  4,
+#     "num5": 5,
+#     "num6": 6
+
+# }
+# print(dict1)
+# print(dict2)
+# dict1.update(dict2)
+# print(dict1)
+# dict2.update({"num9" : 5}) #if key is not present earlier, then it add new key value pair.(doesnot change the existing value of key for same value)
+# print(dict2)
+
+# dict1.clear()
+# print(dict1)
+
+# x = dict2.pop("num4","num5") 
+# print(x)
+# print(dict2)
+
+# dict2.popitem()
+# print(dict2)
+
+# del dict1["num2"]
+# print(dict1)
+
+
+
+# ELSE- IN FOR LOOP***
+
+# for n in range(5):
+#     # if(n == 3):
+#     #     break
+#     print(n)
+# else:
+#     print("out of loop")
+
+
+
+# EXCEPTION HANDLING***
+
+# try:
+#    a = int(input("enter number :"))
+#    print(f"the multiplication  of {a} is :")
+#    for i in range(1,5):
+#      print(f"{int(a)} x {i} = {int(a)  *  i}")
+# except Exception as x :
+#   print(x)
+
+# print("end of code")  
+
+# FINALLY CLAUSE***
+# try:
+#     list = [1,2,3,4]
+#     user = int(input("enter index:"))
+#     print(list[user])
+# except Exception as x:
+#     print(x)    
+# finally:
+#     print("i am anyways executed.")    
+        
+# print("i am anyways executed.")    here, no difference is observed in using print / finally.*
+# def new_function():
+#     try:
+#       list = [1,2,3,4]
+#       user = int(input("enter index:"))
+#       print(list[user])
+#       return 1
+#     except Exception as x:
+#       print(x)   
+#       return 0 
+#     #finally:
+#     #   print("i am anyways executed.")  
+
+#     print("ALWAYS") # THIS IN IN LIGHT COLOR BCZ => VS CODE THINKS THIS CODE WILL NEVER BE EXECUTED.
+# print("always") # this will be printed first*. AS FUNCTION IS CALLED AFTER THIS.
+# y = new_function()
+# print(y)
+
+
+     
+
+# RAISING CUSTOM ERRORS***
+
+# x = input("enter any string :").strip().lower() # input always returns a string, so doesnt matter u input int /str.
+
+# if(x == "quit"):
+#     print("yay! successfull code.")
+# else:
+#     raise ValueError("error occured :( ") 
+
+
+
+
+# ENUMERATE FUNCTION***
+string = "priyanka"
+for index,i in enumerate(string,start = 1):
+    print(f"{index}:{i}" ,end =" ")
+
+
+
+
+
+
+
 
 
 
