@@ -410,9 +410,38 @@ print("hey, world")"""
 
 
 # ENUMERATE FUNCTION***
-string = "priyanka"
-for index,i in enumerate(string,start = 1):
-    print(f"{index}:{i}" ,end =" ")
+# string = "priyanka"
+# for index,i in enumerate(string,start = 1):
+#     # print(f"{index}:{i}" ,end =" ")
+#     print(index,i)
+
+# list = [1,2,3,4,5]
+# for index,i in enumerate(list):
+    
+#     print(index,i)
+
+
+
+
+# IMPORT WORKING  ***
+# import new 
+# new.func()
+
+# import new as n
+# n.func()
+
+# from new import * # here nothing is printed bcz, there is no top level code that has print statement. & we dint call func().
+
+# from new import *  # hereprint inside func is printed bcz, there is no top level code that has print statement. & we called func() first, then x which is just a variable.
+# func()
+# print(x)
+
+# from new import * as s  # INVALID.
+# s.func()
+
+import new 
+new.func()
+
 
 
 
