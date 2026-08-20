@@ -439,8 +439,58 @@ print("hey, world")"""
 # from new import * as s  # INVALID.
 # s.func()
 
-import new 
-new.func()
+# import new 
+# new.func()
+
+
+
+# GLOBAL/ LOCAL VARIABLES***
+# x = 3
+# print (x)
+
+# def func():
+#     y = 5
+#     print(y)
+#     global x 
+#     x = 9
+
+# func()   
+# print(x)
+
+
+# FILE HANDLING IN PYTHON***
+# f = open('newfile.txt','r')
+# # text = f.read()
+# # print(text)
+# print(f.read())
+#f.close()
+
+# f = open('newfile.txt','w')
+# f.write('im in college .')
+# f.close()
+
+# f = open('newfile.txt','a')
+# f.write('im a good girl')
+# f.close()
+
+# WITH STATEMENT*
+# with open('newfile.txt','a') as f:
+#     f.write('  im from odisha')
+
+# with open('newfile.txt') as f:
+#    print(f.read()) 
+
+# with open('newfile2.txt','w') as f: # here a newfile2 auto creates.
+#     f.write('  im from odisha')
+
+# with open('newfile3.txt','a') as f: # here a newfile2 auto creates.
+#     f.write('  im from odisha')
+# with open('newfile4.txt','r') as f: # here a newfile4 will not auto create and give ERROR.
+#  print(f.read())
+
+
+
+
 
 
 
