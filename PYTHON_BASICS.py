@@ -489,6 +489,70 @@ print("hey, world")"""
 #  print(f.read())
 
 
+# READLINE() & WRITELINE()*
+# f = open('newfile3.txt','r')
+
+# i = 0
+# while True:
+#     line = f.readline()
+#     # CANT USE READLINES() AS, IT RETURNS VALUE IN FORM OF A LIST. BUT, WE WANT THE RETURN VALUE HERE IN FORM OF A STRING FOR => [line.split(",")]
+#     i= i+1
+#     if not line:
+#         break
+#     m1 = line.split(",")[0]
+#     m2 = line.split(",")[1]
+#     m3 = line.split(",")[2]
+
+#     print(f"the name of student {i} is {m1} ")
+#     print(f"the marks of student {i} is {m2} ")
+#     print(f"the position of student {i} is {m3} ")
+
+# f.close()    
+
+# f = open('newfile3.txt','a')
+# lines = ['line 1','line 2']
+# # lines = ["lines 1"]
+# # f.writelines(lines + '\n') # not correct as, cant add str to list.
+# f.writelines(lines)
+
+# f.close()
+
+# seek(), tell() , turncate() ***
+
+# f = open('newfile3.txt','r')
+# f.seek(3)
+# print(f.tell())
+# print(f.read(5))
+# f.truncate(4)
+# f.close()
+
+# f = open('newfile3.txt','a')
+# f.truncate(4)
+# f.close()
+# f = open('newfile3.txt','r')
+# print(f.read())
+# f.close()
+
+# f = open('newfile3.txt','w')
+# f.write('hello_my_dear') #THIS STEP IS IMP WHEN WE OPEN FILE IN WRITE MODE. AS IN WRITE MODES IT EMPTIES THE FILE*
+# f.truncate(6)
+# f.close()
+# f = open('newfile3.txt','r')
+# print(f.read())
+# f.close()
+
+# LAMBDA FUNCTION***
+# cube = lambda x : x^3    # WRONG (^ is bitwise XOR operator.)
+
+# print((lambda x : x*x*x) (5)) OR
+# sq = lambda x: x*x 
+# print(sq(2))
+
+# FUNC WITHIN FUNC:
+# def avg(func,value):
+#     return 1 + func(value)
+
+# print(avg(lambda x,y,z: (x+y+z)/3) (1,2,3))
 
 
 
